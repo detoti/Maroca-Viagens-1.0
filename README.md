@@ -1,2 +1,2 @@
 # Maroca-Viagens
-App de viagens para estudo de Autolayout e Constraints.
+App ainda em desenvolvimento, utilizado para estudo de Autolayout e Constraints.
