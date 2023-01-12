@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="MarocaViagens" customModuleProvider="target">
+            <connections>
+                <outlet property="subtituloViagemLabel" destination="xct-z6-olu" id="uPB-wp-xJI"/>
+                <outlet property="tituloViagemLabel" destination="SZc-ZI-tM0" id="FRY-4g-c2a"/>
+                <outlet property="viagemImage" destination="ySY-eM-bEC" id="cQm-50-JG4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="Bhp-jJ-iis">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVe-QL-l4c" userLabel="Image Viagem View">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="235"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancun-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-eM-bEC">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="235"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ9-Iu-yaA">
+                                    <rect key="frame" x="8" y="88" width="79" height="59"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="icon_back" imagePadding="0.0"/>
+                                    <connections>
+                                        <action selector="botaoVoltar:" destination="-1" eventType="touchUpInside" id="xdk-hY-1ja"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ySY-eM-bEC" secondAttribute="trailing" id="Fsv-RE-bJ7"/>
+                                <constraint firstItem="ySY-eM-bEC" firstAttribute="leading" secondItem="IVe-QL-l4c" secondAttribute="leading" id="R4k-QL-7Vy"/>
+                                <constraint firstItem="qZ9-Iu-yaA" firstAttribute="top" secondItem="IVe-QL-l4c" secondAttribute="top" constant="88" id="XpF-80-Mo5"/>
+                                <constraint firstItem="ySY-eM-bEC" firstAttribute="top" secondItem="IVe-QL-l4c" secondAttribute="top" id="cvW-fh-JSQ"/>
+                                <constraint firstAttribute="bottom" secondItem="qZ9-Iu-yaA" secondAttribute="bottom" constant="88" id="gtO-kZ-ixj"/>
+                                <constraint firstItem="qZ9-Iu-yaA" firstAttribute="leading" secondItem="IVe-QL-l4c" secondAttribute="leading" constant="8" id="hP7-SI-Ees"/>
+                                <constraint firstAttribute="trailing" secondItem="qZ9-Iu-yaA" secondAttribute="trailing" constant="306" id="iGt-UD-wVE"/>
+                                <constraint firstAttribute="bottom" secondItem="ySY-eM-bEC" secondAttribute="bottom" id="wzg-YQ-TWi"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JqQ-Ri-c75">
+                            <rect key="frame" x="16" y="235" width="361" height="158.66666666666663"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote de Viagem para Cancun All Inclusive" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZc-ZI-tM0">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="59"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aéreo + Hospedagem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xct-z6-olu">
+                                    <rect key="frame" x="0.0" y="58.999999999999993" width="361" height="19.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47c-6Q-oJm">
+                                    <rect key="frame" x="0.0" y="78.666666666666686" width="361" height="80"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="2iY-RF-heL"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="IVe-QL-l4c" firstAttribute="height" secondItem="Bhp-jJ-iis" secondAttribute="height" multiplier="0.275822" id="Aa2-GX-oJP"/>
+                        <constraint firstItem="IVe-QL-l4c" firstAttribute="leading" secondItem="Bhp-jJ-iis" secondAttribute="leading" id="CfT-OS-mGt"/>
+                        <constraint firstAttribute="trailing" secondItem="JqQ-Ri-c75" secondAttribute="trailing" constant="16" id="E7h-vp-L7O"/>
+                        <constraint firstAttribute="bottom" secondItem="JqQ-Ri-c75" secondAttribute="bottom" id="aYj-7s-ltX"/>
+                        <constraint firstAttribute="trailing" secondItem="IVe-QL-l4c" secondAttribute="trailing" id="hbm-ae-9Lq"/>
+                        <constraint firstItem="JqQ-Ri-c75" firstAttribute="top" secondItem="IVe-QL-l4c" secondAttribute="bottom" id="iZt-5I-dnx"/>
+                        <constraint firstItem="IVe-QL-l4c" firstAttribute="width" secondItem="Bhp-jJ-iis" secondAttribute="width" id="kRb-OK-jB9"/>
+                        <constraint firstItem="IVe-QL-l4c" firstAttribute="top" secondItem="Bhp-jJ-iis" secondAttribute="top" id="qak-bH-Rxo"/>
+                        <constraint firstItem="JqQ-Ri-c75" firstAttribute="leading" secondItem="Bhp-jJ-iis" secondAttribute="leading" constant="16" id="se7-di-xUX"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Bhp-jJ-iis" secondAttribute="trailing" id="1TU-YT-KiN"/>
+                <constraint firstItem="Bhp-jJ-iis" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Qo-6M-dz4"/>
+                <constraint firstItem="Bhp-jJ-iis" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gwo-JZ-8H4"/>
+                <constraint firstItem="Bhp-jJ-iis" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NWk-E4-hj3"/>
+                <constraint firstItem="Bhp-jJ-iis" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OzE-ks-CEx"/>
+                <constraint firstAttribute="trailing" secondItem="Bhp-jJ-iis" secondAttribute="trailing" id="mHL-rK-4VC"/>
+                <constraint firstAttribute="bottom" secondItem="Bhp-jJ-iis" secondAttribute="bottom" id="yGP-Bb-3eP"/>
+            </constraints>
+            <point key="canvasLocation" x="49.618320610687022" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancun-internacional" width="1280" height="778"/>
+        <image name="icon_back" width="50" height="50"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
